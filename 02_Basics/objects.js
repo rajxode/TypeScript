@@ -10,7 +10,7 @@ var User = {
 // passing object inside a function
 // defining type of keys in object
 function createUser(_a) {
-    var string = _a.name, number = _a.age;
+    var name = _a.name, age = _a.age;
     // function body
 }
 // can't do this after defining parameter type

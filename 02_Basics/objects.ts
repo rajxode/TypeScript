@@ -11,7 +11,7 @@ const User = {
 
 // passing object inside a function
 // defining type of keys in object
-function createUser({name:string,age:number}){
+function createUser({name,age}:{name:string,age:number}){
     // function body
 }
 
