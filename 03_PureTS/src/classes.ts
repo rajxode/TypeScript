@@ -65,6 +65,7 @@ class Children extends Person{
 }
 
 
+
 // creating new user from class 
 const newUser = new User ('myname','abc@xyz.com');
 const newPerson = new Person('personName','person@xyz.com');
