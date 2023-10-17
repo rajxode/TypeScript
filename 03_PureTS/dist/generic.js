@@ -33,3 +33,24 @@ four({ name: 'abc', age: 15 });
 function five(val) {
     return val;
 }
+// ==================================================================================================================
+// array of generic type
+// a function that takes an array and return a single value from array
+function getVal(arr) {
+    // we have to return the value of type T from array
+    return arr[2];
+}
+// a function that takes an array of TYPE and return a number
+function getNum(arr) {
+    // here we can return any number value
+    return 5;
+}
+// a function that takes an array and return the array
+function getArr(arr) {
+    // here we need to return the same type arr
+    return arr;
+}
+// arrow function using Generic Array
+const getArray = (arr) => {
+    return arr;
+};

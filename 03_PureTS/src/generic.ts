@@ -44,12 +44,39 @@ interface Worker{
 // for using custom type with Generic
 four <Worker> ({name:'abc',age:15});
 
-
 // another way of generic 
 function five<T>(val:T):T{
     return val;
 }
 
 
+// ==================================================================================================================
+
+// array of generic type
+
+// a function that takes an array and return a single value from array
+function getVal <T>(arr : T[]) : T {
+    // we have to return the value of type T from array
+    return arr[2];
+}
+
+
+// a function that takes an array of TYPE and return a number
+function getNum <T>(arr : T[]) : number {
+    // here we can return any number value
+    return 5;
+}
+
+// a function that takes an array and return the array
+function getArr <T>(arr : T[]) : T[] {
+    // here we need to return the same type arr
+    return arr;
+}
+
+
+// arrow function using Generic Array
+const getArray = <T>(arr: Array<T>) : Array<T> => {
+    return arr;
+}
 
 export {};
